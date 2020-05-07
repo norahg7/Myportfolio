@@ -1,12 +1,14 @@
 /*--element selector */
-<style> 
-
+*{ 
+	color:#E7E6F7;  
+}
 li , .sidenav, ul { list-style: none;
                                          /*no list style bullet point in any of the lists i have in the HTML */
-     }  
+     } 
+
 
 p { 
-	color: red;    
+	color: #E7E6F7;    
 	font-size: 30px;
 	width: 600px;
 }
@@ -18,7 +20,7 @@ h1 {
 
 
  section a { 
-	 color: black;  /* Selector grouped, all a within section it will apply to- Top navigation menu*/
+	 /* Selector grouped, all a within section it will apply to- Top navigation menu*/
 	 font-size: 20px;
 	 background-color: grey;
 	 border: 1px solid black;
@@ -31,18 +33,21 @@ h1 {
      background width: 100px;                                /*Side Navigation menu - class sidenav*/
 	 height: 100%
 	 width: 0;                              
-	 background-color: grey;
-	 border: 1px solid black;
 	 text-decoration: none;
-	 background opacity: 0.6;
 	 text-decoration: none;  
 }
 .sidenav a {    /*navigation menu link */
-	 display: block;
-	 color: black;
+	 /*display: block; */
 	 font-size: 20px;
 	 background-color: grey;	     
 }
+
+.maincontainer div {
+	width: 100%;
+	height: 100%;
+	background: #4e4c67;
+} 
+
 	         
 
 
