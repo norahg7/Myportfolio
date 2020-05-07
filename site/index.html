@@ -1,24 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
  <!-- When writing a code that has Chratacter entity references, Ex references used as content but could also be used as tag, to tell HTML not to view them as HTML we use  Entity refernces &lt; and &amp; &gt; instead of less than sign >,the greater sign and the & sign , also copyright &copy;, &nbsp (Non breaking space) is an Ent ref that remove all space between words so it does't wrap when moved ( got on a sepeate lines) ex victory nor defeat want it on one line so we do victory&nbsp;nor&nbsp;defeat -->
+<title> Norah portfolio </title>
 
-	<title> Norah portfolio </title>
-	</head>
+<!--element selector -->
+<style> 
+p { color: blue;    
+	font-size: 20px;
+	width: 600px;
+}
+h1 { color: grey;
+	font-size: 36px;
+	text-align: center;
+}
+
+
+li { list-style: none; }   /*no list style bullet point in any of the lists i have in the HTML */
+.sidelist li {             /*Side Navigation menuy*/
+	color: black;
+	width: 200;
+	font-size: 20px;
+	background-color: grey;
+	display: block width:200px;
+	
+}
+
+section a {  color: black;  /* Selector grouped, all a within section it will apply to- Top navigation menu*/
+	       font-size: 20px;
+	       background-color: grey;
+	       border: 1px solid black;
+	       text-decoration: none;
+	       margin-right: 10px;
+	       text-align : center;
+	       display: inline-block;
+
+}
+
+	
+
+
+</style>                    <!-- Later will be in the CSS Sheet/ Now just for practice -->
+	
+
+</head>
 	
 <body> 
 	<h1 id="top">Links</h1>   <!-- also called from the bottom of the page -->
 	<header>
 		
-		<section>
+<section>
 	
 
 	<!--<a href =” same-directory.html” title=”same dir link”> content here is going to be visible on the screen</a> Specifying an a element with an attribute a and good practice is to give it a title, it is for the visually impaired people to get through the webpage, it is an internal link linking to a file in the same direc. We can also put the content in between the a tag in a div tag instead-->
 	
 	
 		
-	<nav>       <!--Navigation -->
+<nav>       <!--Navigation -->
 	<ul>        <!--unordered list for navigation-->
 	<li>
 	<span><a href="page1.html" title="Page number 1"> LINK1 </a> </span>
@@ -38,19 +77,19 @@
 </section>
 </header>
 	
-	<section id="section1">
+<section id="section1">
 	<h1>(#section1)Hello welcome to my Porfolio</h1>
 
 	<div>
 		<p>
-		<img src="figdraw.jpg" width="400" height= "200" alt="figure drawing picture">                <!--Internal image, there is also external img you have to spicify src="http://web.com/name.jpg"-->
+		<img src="figdraw.jpg" width="400" height= "200" alt="figure drawing picture">                <!--Internal image, there is also external img you have to spicify src="http://web.com/name.jpg" we also use the width and the height so that the page doesnt take a long time to load and to parition visually-->
 
 	<p id="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 		</div>
 
-		</section>
+</section>
 <H1> Unordered list </H1>
-<div>
+<div class="sidelist"> 
 	<ul>
 		<li>UI            <!--Main unordered list -->
 	<ul>
