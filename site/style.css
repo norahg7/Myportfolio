@@ -1,38 +1,55 @@
 /*--element selector */
 <style> 
-p { color: blue;    
-	font-size: 20px;
+
+li , .sidenav, ul { list-style: none;
+                                         /*no list style bullet point in any of the lists i have in the HTML */
+     }  
+
+p { 
+	color: red;    
+	font-size: 30px;
 	width: 600px;
 }
-h1 { color: grey;
+h1 { 
+	color: grey;
 	font-size: 36px;
 	text-align: center;
 }
 
 
-li { list-style: none; }   /*no list style bullet point in any of the lists i have in the HTML */
-.sidelist li {             /*Side Navigation menuy*/
-	color: black;
-	width: 200;
-	font-size: 20px;
-	background-color: grey;
-	display: block width: 100px;
-	
+ section a { 
+	 color: black;  /* Selector grouped, all a within section it will apply to- Top navigation menu*/
+	 font-size: 20px;
+	 background-color: grey;
+	 border: 1px solid black;
+	 text-decoration: none;
+	 margin-right: 20px;
+	 text-align : center;
+	      
 }
-
-section a {  color: black;  /* Selector grouped, all a within section it will apply to- Top navigation menu*/
-	       font-size: 20px;
-	       background-color: grey;
-	       border: 1px solid black;
-	       text-decoration: none;
-	       margin-right: 20px;
-	       text-align : center;
-	       display: inline-block;
-
+.sidenav {    
+     background width: 100px;                                /*Side Navigation menu - class sidenav*/
+	 height: 100%
+	 width: 0;                              
+	 background-color: grey;
+	 border: 1px solid black;
+	 text-decoration: none;
+	 background opacity: 0.6;
+	 text-decoration: none;  
 }
+.sidenav a {    /*navigation menu link */
+	 display: block;
+	 color: black;
+	 font-size: 20px;
+	 background-color: grey;	     
+}
+	         
+
+
+
 
 	
 
 
-</style>                    <!-- Later will be in the CSS Sheet/ Now just for practice -->
+</style>                  
 	
