@@ -1,0 +1,38 @@
+/*--element selector */
+<style> 
+p { color: blue;    
+	font-size: 20px;
+	width: 600px;
+}
+h1 { color: grey;
+	font-size: 36px;
+	text-align: center;
+}
+
+
+li { list-style: none; }   /*no list style bullet point in any of the lists i have in the HTML */
+.sidelist li {             /*Side Navigation menuy*/
+	color: black;
+	width: 200;
+	font-size: 20px;
+	background-color: grey;
+	display: block width: 100px;
+	
+}
+
+section a {  color: black;  /* Selector grouped, all a within section it will apply to- Top navigation menu*/
+	       font-size: 20px;
+	       background-color: grey;
+	       border: 1px solid black;
+	       text-decoration: none;
+	       margin-right: 20px;
+	       text-align : center;
+	       display: inline-block;
+
+}
+
+	
+
+
+</style>                    <!-- Later will be in the CSS Sheet/ Now just for practice -->
+	
