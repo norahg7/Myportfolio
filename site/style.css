@@ -1,52 +1,94 @@
 /*--element selector */
 *{ 
 	color:#E7E6F7; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
 
 }
 
 
-p { 
+body{                     /* overide or reset default browser settings */   /* There is a maincontainer for the body so this is redundant */
+  margin:0;
+  padding:0;
+}
+
+p {                               /* main paragraph text in the body page */
 	color: #E7E6F7;    
 	font-size: 30px;
-	width: 600px;
+	width: 2000px;
+	padding: 20px;
+	text-align: left;
 }
-h1 { 
-	color: grey;
+h1 {                                     /* main header in the body */
 	font-size: 36px;
 	text-align: center;
+	background-color: #646165;
 }
 
-li {text-decoration: none;
- }
-
-.mainmenu { 
-	 /* Selector grouped, all a within section it will apply to- Top navigation menu*/
-	 display: inline-flex;
-     margin: 50px;
-	 font-size: 30px;
-	 margin-right: 20px;
-	 text-decoration: none;
+/* Styling list links navigation  is not a straightforward so we use states pseudo-class selectors  */
+li {
+   list-style: none;
+   text-align: left;
 
 }
 
+a:link, a:visited {
+	text-decoration: none;    /*removing default styling */
+	background-color: #E7E6F7;
+	border: 1px solid grey;
+	color: black;
 
-.sidenav {    
-     background width: 100px;                                /*Side Navigation menu - class sidenav*/
+
+
+}
+
+a:hover, a:active { 
+	background-color: #DDFCAD;
+
+}
+
+nav  {                                   /*all navigation styling */
+     background width: 100px;                                 
 	 height: 100%
 	 width: 0;                              
 	 text-decoration: none; 
-}
-.sidenav a {    /*navigation menu link */
-	 /*display: block; */
 	 font-size: 20px;
-	 text-decoration: none;
+	 background-color: #011936;
+	 opacity: 0.8;
+}
+
+#section0 {
+   background-color: #82846D;          /*Artichoke header color background */
+
+}
+.mainmenu a { 
+	               /*  top navigation menu link,Selector grouped, all a within section it will apply to- Top navigation menu*/
+	 display: inline-flex;
+     margin: 50px;
+	 margin-right: 20px;	
+}
+
+
+.sidenav a {                          /*navigation menu link */     /*display: block; */
+	 margin-bottom: 2px;
+	 display: block;
+	 width: 200px
+
+	
 		     
 }
 
-.maincontainer div {
+.maincontainer div {             /*main container and has main color of the page*/
 	width: 100%;
 	height: 100%;
-	background: #4e4c67;
+
+	background-color: #A7CECB;  
+	padding: 10px ;
 } 
                 
 	
+	#p1, #section1 {   /*main section text */
+		background-color: #646165;
+	}
