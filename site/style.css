@@ -1,94 +1,375 @@
 /*--element selector */
-*{ 
+/*{ 
 	color:#E7E6F7; 
 	font-family: Arial, Helvetica, sans-serif;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 20px;
 
+}*/
+
+*{   
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+body{
+    max-width: 1440px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-body{                     /* overide or reset default browser settings */   /* There is a maincontainer for the body so this is redundant */
-  margin:0;
-  padding:0;
+.mainmenu{
+    position: absolute;
+    display: inline-flex;
+    width: 850px;
+    height: 18px;
+    left: 533px;
+    top: 42px;
 }
 
-p {                               /* main paragraph text in the body page */
-	color: #E7E6F7;    
-	font-size: 30px;
-	width: 2000px;
-	padding: 20px;
-	text-align: left;
-}
-h1 {                                     /* main header in the body */
-	font-size: 36px;
-	text-align: center;
-	background-color: #646165;
-}
+p{
+line-height: 36px;
+color: #F68BC7;
+width: 396px;
+height: 36px;
+left: 170px;
+top: 481px;
 
-/* Styling list links navigation  is not a straightforward so we use states pseudo-class selectors  */
-li {
-   list-style: none;
-   text-align: left;
-
-}
-
-a:link, a:visited {
-	text-decoration: none;    /*removing default styling */
-	background-color: #E7E6F7;
-	border: 1px solid grey;
-	color: black;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
 
 
-
+/* identical to box height, or 90% */
+letter-spacing: -0.015em;
+ }
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: #000000;
 }
 
-a:hover, a:active { 
-	background-color: #DDFCAD;
+h2{
+
+    font-size: 30px;
+    color: #ffffff
+}
+
+h3{
+
+    font-size: 16px;
+}
+
+h4{
+
+    font-size: 14px;
+}
+
+h5{
+
+    font-size: 12px;
+}
+
+  /* navigation menu styles */
+  nav ul {
+    list-style-type: none;   /*removing default styling */
+  }
+
+  nav ul li {
+    float: left;
+    margin-right: 0.5em;
+    
+  }
+
+  nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #000000; /* dark blue */
+    
+
+  }
+
+
+
+
+
+
+  .pagecontainer{
+    position: relative;
+    width: 1440px;
+    height: 3865px;
+    align-content: center;
+    
+    background: #DCDCDD;
+  }
+
+
+
+
+  /*images styling */
+  img.logo {
+    max-width: 100%;  /*responsive max width is the image width but can go smaller */
+    height: auto;
+    position: absolute;
+    width: 99px;
+    height: 145px;
+    left: 32px;
+    top: 22px;
+  }
+
+  img.bunnies {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 840px;
+    height: 602px;
+    left: 611px;
+    top: 270px;
+    mix-blend-mode: multiply;
+  }
+
+
+  .aboutlinks{
+    position: absolute;
+    width: 93px;
+    height: 154px;
+    left: 47px;
+    top: 1121px;
+
+  }
+  .aboutintro{
+    position: absolute;
+    width: 1176px;
+    height: 265px;
+    left: 226px;
+    top: 1100px;
+
+  }
+
+  /*styling landingpage homepage content */
+
+  /*the black box that contains the name & title of the website owner*/
+  .titlecontainer{
+    position: absolute;
+    width: 638px;
+    height: 273px;
+    left: 0px;
+    top: 394px;
+    background-color: #000000;
+  }
+
+    /*the The Actual text that has name & title of the website owner*/
+.titlerectangle {
+    
+position: absolute;
+width: 396px;
+height: 0px;
+left: 170px;
+top: 80px;  
+}
+
+
+
+
+/*about the owner and the side navigation - Hi I am a UX Designer who is passionate about Digital Arts*/
+.aboutintro{
+
+    position: absolute;
+    width: 1176px;
+    height: 265px;
+    left: 226px;
+    top: 1100px;
+    
+    background: #4D5382;
+    mix-blend-mode: luminosity;
+    
+}
+
+.about{
+    position: absolute;
+    width: 93px;
+    height: 154px;
+    left: 47px;
+    top: 1121px;
+}
+    
+
+
+
+
+
+
+/*Process Seciton that contains the processes of Design */
+.process{
+    position: absolute;
+    width: 1182px;
+    height: 1576px;
+    left: 245px;
+    top: 1553px;
+    background: rgba(255, 127, 148, 0.1);
+}
+
+
+.process0{
+    position: absolute;
+    width: 143px;
+    height: 47px;
+    left: 36px;
+    top: 1600px;
+}
+
+.process1{
+
+    position: absolute;
+    height: 278px;
+    left: 43.41%;
+    top: 1568px;
+    bottom: 3.24%;
+}
+  
+.process2{
+
+position: absolute;
+height: 278px;
+left: 43.41%;
+top: 1861px;
+bottom: 3.24%;
+}
+.process3{
+
+    position: absolute;
+    left: 43.41%;
+    height: 278px;
+    top: 2172px;
+    bottom: 3.24%;
+}
+
+.process4{
+    position: absolute;
+    left: 43.41%;
+    height: 278px;
+    top: 2483px;
+    bottom: 3.24%;
+}
+
+.process5{
+    position: absolute;
+    left: 43.41%;
+    height: 278px;
+    top: 2794px;
+    bottom: 3.24%;
+    
+    
+}
+
+/*Process Seciton that contains the processes of Design */
+.projecttitle{
+    position: absolute;
+width: 146px;
+height: 47px;
+left: 38px;
+top: 3165px;
+
+
+
+}
+.projectnav{
+    position: absolute;
+    width: 141px;
+    height: 314px;
+    left: 59px;
+    top: 3235px;
+    
+    
+}
+
+.projectcase{
+    position: absolute;
+    width: 696px;
+    height: 349px;
+    left: 712px;
+    top: 3217px;
+}
+
+
+
+
+/*Footer Secion */
+footer{
+    position: absolute;
+    width: 1440px;
+    height: 231px;
+    left: 0px;
+    top: 3634px;
+    
+    
+
+
+}
+.socialnav{
+    position: absolute;
+    left: 31.81%;
+    right: 31.88%;
+    top: 32.47%;
+    bottom: 3.24%;
 
 }
 
-nav  {                                   /*all navigation styling */
-     background width: 100px;                                 
-	 height: 100%
-	 width: 0;                              
-	 text-decoration: none; 
-	 font-size: 20px;
-	 background-color: #011936;
-	 opacity: 0.8;
+img.overlayimg{
+position: absolute;
+width: 1440px;
+height: 3865px;
+left: 0px;
+top: 0px;
+
+mix-blend-mode: overlay;
 }
 
-#section0 {
-   background-color: #82846D;          /*Artichoke header color background */
-
-}
-.mainmenu a { 
-	               /*  top navigation menu link,Selector grouped, all a within section it will apply to- Top navigation menu*/
-	 display: inline-flex;
-     margin: 50px;
-	 margin-right: 20px;	
-}
-
-
-.sidenav a {                          /*navigation menu link */     /*display: block; */
-	 margin-bottom: 2px;
-	 display: block;
-	 width: 200px
-
-	
-		     
+.abouttext >h4 {
+    position: absolute;
+    left: 10%;
+    right: 3.47%;
+    top: 30.84%;
+    bottom: 65.98%;
+    
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    
+    /* or 194% */
+    letter-spacing: -0.015em;
+    
+    color: #FFFFFF;
 }
 
-.maincontainer div {             /*main container and has main color of the page*/
-	width: 100%;
-	height: 100%;
+.abouttext >h3 {
+    position: absolute;
+    width: auto;
+    left: 10%;
+    top: 10 px;
+    bottom: 65.98%;
 
-	background-color: #A7CECB;  
-	padding: 10px ;
-} 
-                
-	
-	#p1, #section1 {   /*main section text */
-		background-color: #646165;
-	}
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 44px;
+    
+    /* identical to box height, or 202% */
+    letter-spacing: -0.015em;
+    
+    color: #FFFFFF;
+
+
+}
